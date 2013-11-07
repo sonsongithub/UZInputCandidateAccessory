@@ -15,6 +15,12 @@
  * All of the methods in this protocol are optional.
  */
 @protocol UZInputCandidateAccessoryDelegate <NSObject>
+
+/**
+ * Tells the delegate that a string has been selected.
+ * \param accessory The UZInputCandidateAccessory object whose string is tapped.
+ * \param string The strings tapped. 
+ */
 - (void)inputCandidateAccessory:(UZInputCandidateAccessory*)accessory selectedString:(NSString*)string;
 @end
 
